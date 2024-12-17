@@ -1,4 +1,5 @@
 import "./css/background.css";
+import "./css/App.css";
 
 import { useEffect, useRef } from "react";
 import Circle from "./components/common/shape/Circle";
@@ -10,6 +11,15 @@ import { motion } from "./animation/motion";
 import MainSlideTexts from "./components/presentation/MainSlideTexts";
 import Infobox from "./components/layout/Infobox";
 import Strength from "./components/layout/Strength";
+import Carrer from "./components/layout/Carrer";
+import Portfolio1 from "./components/layout/portfolio/Portfolio1";
+import Portfolio2 from "./components/layout/portfolio/Portfolio2";
+import Portfolio3 from "./components/layout/portfolio/Portfolio3";
+import Portfolio4 from "./components/layout/portfolio/Portfolio4";
+import Portfolio5 from "./components/layout/portfolio/Portfolio5";
+import Cursor from "./components/common/Cursor";
+import Contact from "./components/layout/Contact";
+
 gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
 
 function App() {
@@ -27,16 +37,58 @@ function App() {
         scrollTrigger: {
           trigger: ".strength",
           scrub: true,
-          start: "top top",
+          start: "top center",
           end: "bottom bottom",
           markers: true,
         },
       })
       .to(".three div", { rotateY: 0, stagger: 0.3 });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".exp",
+          start: "top center",
+          end: "bottom center",
+          markers: true,
+          scrub: true,
+        },
+      })
+
+      .to(".para", { opacity: 1, rotateX: 0, duration: 0.9, stagger: 1 });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".exp2",
+          start: "top center",
+          end: "bottom center",
+          // markers: true,
+          scrub: true,
+        },
+      })
+      .to(".para2", { opacity: 1, rotateX: 0, duration: 0.9, stagger: 1 });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".portbox",
+          start: "top top",
+          end: "800% bottom",
+          pin: true,
+          markers: true,
+          scrub: 1,
+        },
+      })
+      .to(".port2", { duration: 2, y: 0 })
+      .to(".port3", { duration: 2, y: 0 })
+      .to(".port4", { duration: 2, y: 0 })
+      .to(".port5", { duration: 2, y: 0 });
   }, []);
 
   return (
     <>
+      <Cursor />
       <div className="main"></div>
       <div
         className="test"
@@ -78,6 +130,27 @@ function App() {
         }}
       >
         <Strength />
+      </section>
+
+      <Carrer />
+      <section
+        className="portbox"
+        style={{ width: "100%", position: "relative" }}
+      >
+        <Portfolio1 />
+        <Portfolio2 />
+        <Portfolio3 />
+        <Portfolio4 />
+        <Portfolio5 />
+      </section>
+      <section
+        style={{
+          width: "100%",
+          backgroundColor: "black",
+          padding: "170px 0px 200px 0px",
+        }}
+      >
+        <Contact />
       </section>
     </>
   );

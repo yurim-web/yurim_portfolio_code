@@ -4,7 +4,7 @@ const Infobox = () => {
       style={{
         borderRadius: "20px",
         width: "100%",
-        backgroundColor: "white",
+        backgroundColor: "#FFF9E8",
         maxWidth: "950px",
         margin: "0 auto",
         padding: "80px 50px",
@@ -15,7 +15,9 @@ const Infobox = () => {
       }}
     >
       <div>
-        <h1 style={{ color: "#00adb4", fontSize: "50px" }}>PROFILE</h1>
+        <h1 style={{ color: "#00adb4", fontSize: "50px", fontFamily: "Bold" }}>
+          PROFILE
+        </h1>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <img
@@ -39,7 +41,9 @@ const Infobox = () => {
               gap: "15px",
             }}
           >
-            <h1 style={{ borderBottom: "1px solid black" }}>ABOUT ME</h1>
+            <h1 style={{ borderBottom: "1px solid black", fontWeight: "bold" }}>
+              ABOUT ME
+            </h1>
             <p>NAME : 이유림</p>
             <p>BIRTH : 2000.11.04</p>
             <p>PHONE : 010.0000.0000</p>

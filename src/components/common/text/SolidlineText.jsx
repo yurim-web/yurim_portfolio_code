@@ -4,6 +4,7 @@ const SolidlineText = ({ text }) => {
       style={{
         color: "#00adb4",
         fontSize: "145px",
+        fontFamily: "Bold",
       }}
     >
       {text}

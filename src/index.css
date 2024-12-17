@@ -1,3 +1,17 @@
 * {
   margin: 0;
 }
+@font-face {
+  font-family: "Regular";
+  font-weight: normal;
+  src: url("./fonts/NanumSquareNeoOTF-Rg.otf") format("opentype");
+}
+@font-face {
+  font-family: "Bold";
+  font-weight: bold;
+  src: url("./fonts/NanumSquareNeoOTF-Hv.otf") format("opentype");
+}
+
+body {
+  font-family: "Regular";
+}

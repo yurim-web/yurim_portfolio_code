@@ -14,7 +14,9 @@ const Strength = () => {
         gap: "30px",
       }}
     >
-      <h1 style={{ color: "white", fontSize: "50px" }}>Strength.</h1>
+      <h1 style={{ color: "white", fontSize: "50px", fontFamily: "Bold" }}>
+        Strength.
+      </h1>
       <StrenthToggleBox />
       <StrengthContentsBox />
     </article>

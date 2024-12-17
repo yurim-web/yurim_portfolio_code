@@ -5,6 +5,7 @@ const OutlineText = ({ text }) => {
         fontSize: "145px",
         color: "transparent",
         webkitTextStroke: "3px   #00adb4",
+        fontFamily: "Bold",
       }}
     >
       {text}
