@@ -1,28 +1,13 @@
 import { useState } from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaGithub, FaPhoneAlt } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
 import { IoHappySharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
-  const [message, setMessage] = useState("");
-
-  // 입력 내용이 변경될 때마다 상태 업데이트
-  const handleInputChange = (e) => {
-    setMessage(e.target.value);
-  };
-
-  // 이메일 링크를 만들기 위한 함수
-  const handleSendEmail = () => {
-    const subject = "Contact Form Submission"; // 이메일 제목
-    const body = encodeURIComponent(message); // 본문 내용을 URL 인코딩하여 이메일 본문에 넣음
-    const email = "lyl5152@naver.com"; // 받는 사람 이메일 주소
-
-    // mailto 링크를 동적으로 생성하여 클릭
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
-  };
-
   return (
     <article
+      className="contact_detail"
       style={{
         width: "100%",
         maxWidth: "950px",
@@ -30,62 +15,62 @@ const Contact = () => {
         display: "flex",
         flexDirection: "column",
         gap: "30px",
+        opacity: 0,
+        transform: "translateY(100px)",
       }}
     >
       <h1 style={{ color: "white", fontSize: "50px", fontFamily: "Bold" }}>
         Contact.
       </h1>
       <h1 style={{ color: "#FFEDBD" }}>I HOPE YOU ENJOY MY PROJECT</h1>
-      <div style={{ display: "flex", gap: "40px" }}>
-        <input
-          style={{
-            width: "100%",
-            color: "grey",
-            borderRadius: "10px",
-            padding: "10px",
-          }}
-          placeholder="내용을 입력해주세요"
-          type="text"
-          value={message}
-          onChange={handleInputChange} // 입력값이 변경될 때마다 상태 업데이트
-        />
-        <button
-          onClick={handleSendEmail} // 버튼 클릭 시 이메일 전송
-          style={{
-            backgroundColor: "#FFF9E8",
-            padding: "20px 50px",
-            color: "black",
-            border: "none",
-            borderRadius: "10px",
-            fontSize: "20px",
-          }}
-        >
-          SEND
-        </button>
-      </div>
       <div
         style={{
-          color: "white",
-          alignItems: "center",
           display: "flex",
-          fontSize: "25PX",
+          justifyContent: "space-between",
+          marginTop: "40px",
         }}
       >
-        <FaPhoneAlt />
-        <span style={{ marginLeft: "15px" }}>010-4054-5152</span>
-      </div>
-      <div
-        style={{
-          color: "white",
-          alignItems: "center",
-          display: "flex",
-          fontSize: "25PX",
-        }}
-      >
-        <MdEmail />
+        <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+          <div
+            style={{
+              color: "white",
+              alignItems: "center",
+              display: "flex",
+              fontSize: "25px",
+            }}
+          >
+            <FaPhoneAlt />
+            <span style={{ marginLeft: "15px" }}>010-4054-5152</span>
+          </div>
+          <div
+            style={{
+              color: "white",
+              alignItems: "center",
+              display: "flex",
+              fontSize: "25PX",
+            }}
+          >
+            <MdEmail />
 
-        <span style={{ marginLeft: "15px" }}>lyl5152@naver.com</span>
+            <span style={{ marginLeft: "15px" }}>lyl5152@naver.com</span>
+          </div>
+          <div style={{ display: "flex", gap: "20px" }}>
+            <a href="https://github.com/">
+              <FaGithub color="white" size={70} />
+            </a>
+            <a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13530338586&extra_1=s%7Cc%7C547419126419%7Ce%7Cinstagram%20%27%7C&placement=&creative=547419126419&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13530338586%26adgroupid%3D126262418054%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D9196518%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=EAIaIQobChMIwKSVsMawigMVaQ57Bx152wCSEAAYASAAEgJHkfD_BwE">
+              <FaSquareInstagram color="white" size={70} />
+            </a>
+          </div>
+        </div>
+
+        <img
+          style={{ width: "200px", borderRadius: "10PX" }}
+          src="sns.jpg"
+          alt=""
+        />
       </div>
+
       <div
         style={{
           color: "white",

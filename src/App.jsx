@@ -20,7 +20,7 @@ import Portfolio5 from "./components/layout/portfolio/Portfolio5";
 import Cursor from "./components/common/Cursor";
 import Contact from "./components/layout/Contact";
 
-gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   useEffect(() => {
@@ -39,7 +39,6 @@ function App() {
           scrub: true,
           start: "top center",
           end: "bottom bottom",
-          markers: true,
         },
       })
       .to(".three div", { rotateY: 0, stagger: 0.3 });
@@ -50,7 +49,6 @@ function App() {
           trigger: ".exp",
           start: "top center",
           end: "bottom center",
-          markers: true,
           scrub: true,
         },
       })
@@ -63,7 +61,7 @@ function App() {
           trigger: ".exp2",
           start: "top center",
           end: "bottom center",
-          // markers: true,
+
           scrub: true,
         },
       })
@@ -76,7 +74,6 @@ function App() {
           start: "top top",
           end: "800% bottom",
           pin: true,
-          markers: true,
           scrub: 1,
         },
       })
@@ -84,6 +81,17 @@ function App() {
       .to(".port3", { duration: 2, y: 0 })
       .to(".port4", { duration: 2, y: 0 })
       .to(".port5", { duration: 2, y: 0 });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".contactbox",
+          start: "top top",
+          end: "bottom bottom",
+          pin: true,
+        },
+      })
+      .to(".contact_detail", { duration: 1.5, y: 0, opacity: 1 });
   }, []);
 
   return (
@@ -127,6 +135,7 @@ function App() {
         style={{
           backgroundColor: "black",
           width: "100%",
+          paddingTop: "200px",
         }}
       >
         <Strength />
@@ -144,10 +153,11 @@ function App() {
         <Portfolio5 />
       </section>
       <section
+        className="contactbox"
         style={{
           width: "100%",
           backgroundColor: "black",
-          padding: "170px 0px 200px 0px",
+          padding: "180px 0px 200px 0px",
         }}
       >
         <Contact />

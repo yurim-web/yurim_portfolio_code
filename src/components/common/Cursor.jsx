@@ -9,23 +9,19 @@ const Cursor = () => {
   useEffect(() => {
     window.addEventListener("mousemove", onMouseMove);
     document.body.style.cursor = "none";
-    // return () => {
-    //   window.removeEventListener("mousemove", onMouseMove);
-    //   document.body.style.cursor = "auto";
-    // };
   }, []);
 
   return (
     <div
       style={{
         position: "fixed",
-        width: "100px",
-        height: "100px",
-        // backgroundColor: "white",
-        borderRadius: "50%",
+        width: "50px",
+        height: "50px",
         pointerEvents: "none",
         transform: "trnaslate(-50%, -50%)",
         zIndex: "9999",
+        // borderRadius: "9999px",
+        // border: "2px solid white",
         backgroundImage: `url("mousecursor.png")`,
         backgroundSize: "cover",
         left: `${position.x}px`,

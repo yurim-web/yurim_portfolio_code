@@ -1,3 +1,6 @@
+import { FaHome } from "react-icons/fa";
+import { IoIosSchool } from "react-icons/io";
+
 const Infobox = () => {
   return (
     <article
@@ -7,10 +10,10 @@ const Infobox = () => {
         backgroundColor: "#FFF9E8",
         maxWidth: "950px",
         margin: "0 auto",
-        padding: "80px 50px",
+        padding: "80px 60px",
         display: "flex",
         flexDirection: "column",
-        gap: "50px",
+        gap: "90px",
         boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
       }}
     >
@@ -19,16 +22,20 @@ const Infobox = () => {
           PROFILE
         </h1>
       </div>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <img
           style={{
-            borderRadius: "999px",
-            backgroundColor: "#00adb4",
-            width: "200px",
-            height: "200px",
-            boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+            width: "250px",
+            height: "250px",
+            objectFit: "contain",
           }}
-          src="https://img4.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202105/25/holapet/20210525041813796jqwe.jpg"
+          src="myimg.png"
           alt=""
         />
 
@@ -38,28 +45,67 @@ const Infobox = () => {
               width: "280px",
               display: "flex",
               flexDirection: "column",
-              gap: "15px",
+              gap: "18px",
+              lineHeight: "1.5",
             }}
           >
-            <h1 style={{ borderBottom: "1px solid black", fontWeight: "bold" }}>
-              ABOUT ME
-            </h1>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              <FaHome size={30} />
+              <h1
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "25px",
+                }}
+              >
+                ABOUT ME
+              </h1>
+            </div>
+
+            <div
+              style={{ width: "100%", height: "2px", backgroundColor: "black" }}
+            ></div>
             <p>NAME : 이유림</p>
             <p>BIRTH : 2000.11.04</p>
-            <p>PHONE : 010.0000.0000</p>
-            <p>EMAIL : lyl5152@naver.xom</p>
+            <p>PHONE : 010.4054.5152</p>
+            <p>EMAIL : lyl5152@naver.com</p>
           </div>
+        </div>
+        <div style={{ display: "flex", gap: "40px" }}>
           <div
             style={{
               width: "280px",
               display: "flex",
               flexDirection: "column",
-              gap: "15px",
+              gap: "18px",
+              lineHeight: "1.5",
             }}
           >
-            <h1 style={{ borderBottom: "1px solid black" }}>EXPERIENCE</h1>
-            <p>2024.01~2023.08 : (주)쇼엠</p>
-            <p>2022.04~2023.06 : 웹디자이너</p>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              <IoIosSchool size={30} />
+              <h1
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "25px",
+                }}
+              >
+                MY EDUCATION
+              </h1>
+            </div>
+
+            <div
+              style={{ width: "100%", height: "2px", backgroundColor: "black" }}
+            ></div>
+            <p>
+              웹(퍼블리셔) 프론트엔드(Javascript,React) 양성과정 350시간 수료
+            </p>
+            <p>청운대학교(인천캠) 멀티미디어학과 졸업</p>
+            <p>인천논현고등학교 졸업</p>
           </div>
         </div>
       </div>
@@ -73,21 +119,23 @@ const Infobox = () => {
           textAlign: "center",
         }}
       >
-        <strong style={{ fontSize: "20px", color: "#00adb4", fontWeight: 700 }}>
-          "웹 디자이너 경력을 바탕으로 사용자 경험을 최우선으로 생각하는
-          프론트엔드 개발자입니다!"
+        <strong style={{ fontSize: "25px", color: "#00adb4", fontWeight: 700 }}>
+          "웹 디자이너 경력을 바탕으로 사용자 경험을 최우선으로 생각하는 웹
+          퍼블리셔 입니다!"
         </strong>
-        <p>
-          디자인과 개발의 경계를 넘나들며 직관적이고 세련된 웹을 구현합니다.
-        </p>
-        <p>
-          다양한 웹 디자인 프로젝트에서 얻은 경험을 통해 UI/UX의 중요성을 깊이
-          이해하고 있습니다.
-        </p>
-        <p>
-          최신 기술을 활용하여 빠르고 반응성이 뛰어난 웹 애플리케이션을
-          개발합니다.
-        </p>
+        <div style={{ lineHeight: "1.6", marginTop: "15px" }}>
+          <p>
+            디자인과 개발의 경계를 넘나들며 직관적이고 세련된 웹을 구현합니다.
+          </p>
+          <p>
+            다양한 웹 디자인 프로젝트에서 얻은 경험을 통해 UI/UX의 중요성을 깊이
+            이해하고 있습니다.
+          </p>
+          <p>
+            최신 기술을 활용하여 빠르고 반응성이 뛰어난 웹 애플리케이션을
+            개발합니다.
+          </p>
+        </div>
       </div>
     </article>
   );

@@ -5,6 +5,5 @@ export const triggers = {
     scrub: 2,
     start: "top top",
     end: "+=2000",
-    markers: true,
   },
 };

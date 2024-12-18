@@ -15,7 +15,7 @@ const MainSlideTexts = () => {
       <SlideText className={targets.textName} text={"LEE YU RIM"} />
       <SlideText
         className={targets.textFrontend}
-        text={"FRENTEND"}
+        text={"PUBLISHER"}
         justifyContent={"end"}
       />
     </div>
