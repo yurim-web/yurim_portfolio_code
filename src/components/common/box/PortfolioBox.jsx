@@ -9,7 +9,7 @@ const PortfolioBox = ({ value, title }) => {
       }}
     >
       <h3 style={{ fontSize: "20px", width: "40%" }}>{title}</h3>
-      <p style={{ width: "80%" }}>{value}</p>
+      <p style={{ width: "80%",lineHeight:"1.5" }}>{value}</p>
     </div>
   );
 };

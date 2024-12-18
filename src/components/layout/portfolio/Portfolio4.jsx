@@ -1,3 +1,4 @@
+import ImgBox from "../../common/box/ImgBox";
 import PortfolioBox from "../../common/box/PortfolioBox";
 import Stack from "../../common/button/Stack";
 
@@ -10,7 +11,7 @@ const Portfolio4 = () => {
         backgroundColor: "#a7313d",
         height: "600px",
         color: "white",
-        padding: "100px 0px 200px 0px",
+        padding: "100px 0px 250px 0px",
         position: "absolute",
 
         transform: "translateY(1000px)",
@@ -36,11 +37,8 @@ const Portfolio4 = () => {
             gap: "90px",
           }}
         >
-          <img
-            style={{ width: "400px", height: "600px", objectFit: "cover" }}
-            src="애플.png"
-            alt=""
-          />
+          <ImgBox img={"ysl.png"}/>
+
           <div
             style={{
               width: "100%",
@@ -65,12 +63,12 @@ const Portfolio4 = () => {
                 backgroundColor: "white",
               }}
             ></div>
-            <PortfolioBox title={"제작기간"} value={"2024.10.22~2024.11.05"} />
+            <PortfolioBox title={"제작기간"} value={"2024.11.15 ~ 2024.11.25"} />
             <PortfolioBox title={"참여도"} value={"개인 100%"} />
             <PortfolioBox
               title={"내용"}
               value={
-                " APPLE 공식 사이트를 클론코딩하여 만든 적응형 PC버전 웹사이트 입니다."
+                "이 웹사이트는 입생로랑(YSL) 공식 홈페이지에서 영감을 받아 새롭게 기획한 포트폴리오 사이트입니다. GSAP.js를 활용한 다양한 애니메이션 효과로 세련된 디자인을 강조하며, 입생로랑의 고유한 매력을 전달하고자 했습니다."
               }
             />
 
@@ -94,24 +92,24 @@ const Portfolio4 = () => {
                 <Stack stack={"HTML"} bgcolor={"#FFC0C1"} />
                 <Stack stack={"CSS"} bgcolor={"#C0D6FF"} />
                 <Stack stack={"Javascript"} bgcolor={"#C3FFC0"} />
-                <Stack stack={"React"} bgcolor={"#FFF0C0"} />
+                <Stack stack={"Gsap.js"} bgcolor={"#C0FFF0"} />
               </div>
             </div>
-            <button
+            <a  style={{ cursor: "hand" }} href="https://yurim-web.github.io/YSL_portfolio_/">     <button
               style={{
                 width: "100%",
-                height: "60px",
+                padding: "20px",
                 borderRadius: "10px",
                 border: "none",
                 boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                marginTop: "60px",
+                marginTop: "20px",
                 fontSize: "20PX",
                 backgroundColor: "white",
                 color: "black",
               }}
             >
               LINK
-            </button>
+            </button></a>
           </div>
         </div>
       </article>

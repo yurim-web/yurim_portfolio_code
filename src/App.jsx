@@ -19,6 +19,7 @@ import Portfolio4 from "./components/layout/portfolio/Portfolio4";
 import Portfolio5 from "./components/layout/portfolio/Portfolio5";
 import Cursor from "./components/common/Cursor";
 import Contact from "./components/layout/Contact";
+import Portfolio6 from "./components/layout/portfolio/Portfolio6";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,6 +80,7 @@ function App() {
       })
       .to(".port2", { duration: 2, y: 0 })
       .to(".port3", { duration: 2, y: 0 })
+      .to(".port6", { duration: 2, y: 0 })
       .to(".port4", { duration: 2, y: 0 })
       .to(".port5", { duration: 2, y: 0 });
 
@@ -149,6 +151,7 @@ function App() {
         <Portfolio1 />
         <Portfolio2 />
         <Portfolio3 />
+        <Portfolio6 />
         <Portfolio4 />
         <Portfolio5 />
       </section>

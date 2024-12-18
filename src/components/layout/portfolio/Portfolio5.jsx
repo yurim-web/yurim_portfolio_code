@@ -1,3 +1,4 @@
+import ImgBox from "../../common/box/ImgBox";
 import PortfolioBox from "../../common/box/PortfolioBox";
 import Stack from "../../common/button/Stack";
 
@@ -7,15 +8,13 @@ const Portfolio5 = () => {
       className="port5"
       style={{
         width: "100%",
-        backgroundColor: "#21d3d3",
+        backgroundColor: "#77E4C8",
         height: "600px",
-        color: "white",
-        padding: "100px 0px 200px 0px",
-
+        color: "black",
+        padding: "100px 0px 250px 0px",
         position: "absolute",
 
         transform: "translateY(1000px)",
-
         top: "0px",
       }}
     >
@@ -38,11 +37,8 @@ const Portfolio5 = () => {
             gap: "90px",
           }}
         >
-          <img
-            style={{ width: "400px", height: "600px", objectFit: "cover" }}
-            src="강남언니.png"
-            alt=""
-          />
+          <ImgBox img={"waveyy.png"}/>
+
           <div
             style={{
               width: "100%",
@@ -58,21 +54,21 @@ const Portfolio5 = () => {
                 fontWeight: 700,
               }}
             >
-              API를 활용한 영화
+              Waveyy
             </h1>
             <div
               style={{
                 width: "100%",
                 height: "3px",
-                backgroundColor: "white",
+                backgroundColor: "black",
               }}
             ></div>
-            <PortfolioBox title={"제작기간"} value={"2024.10.22~2024.11.05"} />
+            <PortfolioBox title={"제작기간"} value={"2024.11.30 ~ 2024.12.06"} />
             <PortfolioBox title={"참여도"} value={"개인 100%"} />
             <PortfolioBox
               title={"내용"}
               value={
-                " 강남언니 공식 사이트를 클론코딩하여 만든 적응형 PC버전 웹사이트 입니다."
+                "이 웹사이트는 Next.js와 영화·드라마 API를 활용해 기획하고 만든 영화, 드라마 정보 사이트입니다. 다양한 영화와 드라마의 정보를 직관적으로 탐색할 수 있는 기능과 페이지 이동 기능을 제공합니다."
               }
             />
 
@@ -95,21 +91,25 @@ const Portfolio5 = () => {
               >
                 <Stack stack={"HTML"} bgcolor={"#FFC0C1"} />
                 <Stack stack={"CSS"} bgcolor={"#C0D6FF"} />
+                <Stack stack={"Javascript"} bgcolor={"#C3FFC0"} />
+                <Stack stack={"Next.js"} bgcolor={"#FFDDC0"} />
               </div>
             </div>
-            <button
+            <a  style={{ cursor: "hand" }} href="https://movie-api-portfolio.vercel.app/">     <button
               style={{
                 width: "100%",
-                height: "60px",
+                padding: "20px",
                 borderRadius: "10px",
                 border: "none",
                 boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                marginTop: "20px",
                 fontSize: "20PX",
-                marginTop: "60px",
+                backgroundColor: "black",
+                color: "white",
               }}
             >
               LINK
-            </button>
+            </button></a>
           </div>
         </div>
       </article>

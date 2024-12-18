@@ -4,6 +4,6 @@ export const triggers = {
     pin: true,
     scrub: 2,
     start: "top top",
-    end: "+=2000",
+    end: "+=1200",
   },
 };

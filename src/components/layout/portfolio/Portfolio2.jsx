@@ -1,3 +1,4 @@
+import ImgBox from "../../common/box/ImgBox";
 import PortfolioBox from "../../common/box/PortfolioBox";
 import Stack from "../../common/button/Stack";
 
@@ -10,7 +11,7 @@ const Portfolio2 = () => {
         backgroundColor: "#dcdcd0",
         height: "600px",
         color: "black",
-        padding: "100px 0px 200px 0px",
+        padding: "100px 0px 250px 0px",
         position: "absolute",
 
         transform: "translateY(1000px)",
@@ -36,11 +37,8 @@ const Portfolio2 = () => {
             gap: "90px",
           }}
         >
-          <img
-            style={{ width: "400px", height: "600px", objectFit: "cover" }}
-            src="애플.png"
-            alt=""
-          />
+      
+           <ImgBox img={"애플.png"}/>
           <div
             style={{
               width: "100%",
@@ -65,12 +63,12 @@ const Portfolio2 = () => {
                 backgroundColor: "black",
               }}
             ></div>
-            <PortfolioBox title={"제작기간"} value={"2024.10.22~2024.11.05"} />
+            <PortfolioBox title={"제작기간"} value={"2024.10.29 ~ 2024.11.02"} />
             <PortfolioBox title={"참여도"} value={"개인 100%"} />
             <PortfolioBox
               title={"내용"}
               value={
-                " APPLE 공식 사이트를 클론코딩하여 만든 적응형 PC버전 웹사이트 입니다."
+                "이 웹사이트는 Apple 공식 사이트의 PC 버전을 클론 코딩하여 만든 작품입니다. React를 활용해 메인 페이지를 구성하고, 직관적인 디자인으로 Apple의 웹사이트를 세심하게 재현했습니다."
               }
             />
 
@@ -97,21 +95,22 @@ const Portfolio2 = () => {
                 <Stack stack={"React"} bgcolor={"#FFF0C0"} />
               </div>
             </div>
-            <button
+            <a  style={{ cursor: "hand" }} href="https://yurim-web.github.io/apple_clone_page2/">     <button
               style={{
                 width: "100%",
-                height: "60px",
+                padding: "20px",
                 borderRadius: "10px",
                 border: "none",
                 boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                marginTop: "60px",
+                marginTop: "20px",
                 fontSize: "20PX",
                 backgroundColor: "black",
                 color: "white",
               }}
             >
               LINK
-            </button>
+            </button></a>
+       
           </div>
         </div>
       </article>

@@ -1,3 +1,4 @@
+import ImgBox from "../../common/box/ImgBox";
 import PortfolioBox from "../../common/box/PortfolioBox";
 import Stack from "../../common/button/Stack";
 
@@ -10,7 +11,7 @@ const Portfolio1 = () => {
         backgroundColor: "#ff540f",
         height: "600px",
         color: "white",
-        padding: "100px 0px 200px 0px",
+        padding: "100px 0px 250px 0px",
         position: "absoulte",
         top: "0px",
       }}
@@ -34,11 +35,8 @@ const Portfolio1 = () => {
             gap: "90px",
           }}
         >
-          <img
-            style={{ width: "400px", height: "600px", objectFit: "cover" }}
-            src="강남언니.png"
-            alt=""
-          />
+         
+          <ImgBox img={"강남언니.png"}/>
           <div
             style={{
               width: "100%",
@@ -63,12 +61,13 @@ const Portfolio1 = () => {
                 backgroundColor: "white",
               }}
             ></div>
-            <PortfolioBox title={"제작기간"} value={"2024.10.22~2024.11.05"} />
+            
+            <PortfolioBox title={"제작기간"} value={"2024.10.25 ~ 2024.10.28"} />
             <PortfolioBox title={"참여도"} value={"개인 100%"} />
             <PortfolioBox
               title={"내용"}
               value={
-                " 강남언니 공식 사이트를 클론코딩하여 만든 적응형 PC버전 웹사이트 입니다."
+                "이 웹사이트는 강남언니 공식 사이트의 PC 버전을 클론 코딩한 작품입니다. HTML과 CSS만을 사용하여 메인 페이지와 두 개의 서브페이지를 구성하고, 직관적인 디자인으로 강남언니 웹사이트를 재현했습니다."
               }
             />
 
@@ -94,17 +93,17 @@ const Portfolio1 = () => {
               </div>
             </div>
             <a
-              style={{ cursor: "pointer" }}
+              style={{ cursor: "hand" }}
               href="https://yurim-web.github.io/gangnam/index.html"
             >
               <button
                 style={{
                   width: "100%",
                   borderRadius: "10px",
-                  padding: "10px",
+                  padding: "20px",
                   border: "none",
                   boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                  fontSize: "20PX",
+                  fontSize: "20px",
                   marginTop: "60px",
                 }}
               >
