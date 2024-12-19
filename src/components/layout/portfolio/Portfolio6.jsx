@@ -2,6 +2,8 @@ import ImgBox from "../../common/box/ImgBox";
 import PortfolioBox from "../../common/box/PortfolioBox";
 import Stack from "../../common/button/Stack";
 
+// avengers 포트폴리오
+
 const Portfolio6 = () => {
   return (
     <section
@@ -37,7 +39,7 @@ const Portfolio6 = () => {
             gap: "90px",
           }}
         >
-          <ImgBox img={"avenger.png"}/>
+          <ImgBox img={"avenger.png"} />
 
           <div
             style={{
@@ -63,7 +65,10 @@ const Portfolio6 = () => {
                 backgroundColor: "white",
               }}
             ></div>
-            <PortfolioBox title={"제작기간"} value={"2024.11.06 ~ 2024.11.13"} />
+            <PortfolioBox
+              title={"제작기간"}
+              value={"2024.11.06 ~ 2024.11.13"}
+            />
             <PortfolioBox title={"참여도"} value={"개인 100%"} />
             <PortfolioBox
               title={"내용"}
@@ -95,21 +100,27 @@ const Portfolio6 = () => {
                 <Stack stack={"Gsap.js"} bgcolor={"#C0FFF0"} />
               </div>
             </div>
-            <a  style={{ cursor: "hand" }} href="https://yurim-web.github.io/avengers_portfolio/">     <button
-              style={{
-                width: "100%",
-                padding: "20px",
-                borderRadius: "10px",
-                border: "none",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                marginTop: "20px",
-                fontSize: "20PX",
-                backgroundColor: "white",
-                color: "black",
-              }}
+            <a
+              style={{ cursor: "hand" }}
+              href="https://yurim-web.github.io/avengers_portfolio/"
             >
-              LINK
-            </button></a>
+              {" "}
+              <button
+                style={{
+                  width: "100%",
+                  padding: "20px",
+                  borderRadius: "10px",
+                  border: "none",
+                  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                  marginTop: "20px",
+                  fontSize: "20PX",
+                  backgroundColor: "white",
+                  color: "black",
+                }}
+              >
+                LINK
+              </button>
+            </a>
           </div>
         </div>
       </article>

@@ -55,7 +55,7 @@ const Contact = () => {
             <span style={{ marginLeft: "15px" }}>lyl5152@naver.com</span>
           </div>
           <div style={{ display: "flex", gap: "20px" }}>
-            <a href="https://github.com/">
+            <a href="https://github.com/yurim-web">
               <FaGithub color="white" size={70} />
             </a>
             <a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13530338586&extra_1=s%7Cc%7C547419126419%7Ce%7Cinstagram%20%27%7C&placement=&creative=547419126419&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13530338586%26adgroupid%3D126262418054%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D9196518%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=EAIaIQobChMIwKSVsMawigMVaQ57Bx152wCSEAAYASAAEgJHkfD_BwE">

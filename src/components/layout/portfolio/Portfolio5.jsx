@@ -2,6 +2,8 @@ import ImgBox from "../../common/box/ImgBox";
 import PortfolioBox from "../../common/box/PortfolioBox";
 import Stack from "../../common/button/Stack";
 
+// Wavvey 포트폴리오
+
 const Portfolio5 = () => {
   return (
     <section
@@ -37,7 +39,7 @@ const Portfolio5 = () => {
             gap: "90px",
           }}
         >
-          <ImgBox img={"waveyy.png"}/>
+          <ImgBox img={"waveyy.png"} />
 
           <div
             style={{
@@ -63,7 +65,10 @@ const Portfolio5 = () => {
                 backgroundColor: "black",
               }}
             ></div>
-            <PortfolioBox title={"제작기간"} value={"2024.11.30 ~ 2024.12.06"} />
+            <PortfolioBox
+              title={"제작기간"}
+              value={"2024.12.01 ~ 2024.12.12"}
+            />
             <PortfolioBox title={"참여도"} value={"개인 100%"} />
             <PortfolioBox
               title={"내용"}
@@ -95,21 +100,27 @@ const Portfolio5 = () => {
                 <Stack stack={"Next.js"} bgcolor={"#FFDDC0"} />
               </div>
             </div>
-            <a  style={{ cursor: "hand" }} href="https://movie-api-portfolio.vercel.app/">     <button
-              style={{
-                width: "100%",
-                padding: "20px",
-                borderRadius: "10px",
-                border: "none",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                marginTop: "20px",
-                fontSize: "20PX",
-                backgroundColor: "black",
-                color: "white",
-              }}
+            <a
+              style={{ cursor: "hand" }}
+              href="https://movie-api-portfolio.vercel.app/"
             >
-              LINK
-            </button></a>
+              {" "}
+              <button
+                style={{
+                  width: "100%",
+                  padding: "20px",
+                  borderRadius: "10px",
+                  border: "none",
+                  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                  marginTop: "20px",
+                  fontSize: "20PX",
+                  backgroundColor: "black",
+                  color: "white",
+                }}
+              >
+                LINK
+              </button>
+            </a>
           </div>
         </div>
       </article>

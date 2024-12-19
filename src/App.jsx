@@ -89,7 +89,7 @@ function App() {
         scrollTrigger: {
           trigger: ".contactbox",
           start: "top top",
-          end: "bottom bottom",
+          end: "center bottom",
           pin: true,
         },
       })
@@ -160,7 +160,7 @@ function App() {
         style={{
           width: "100%",
           backgroundColor: "black",
-          padding: "180px 0px 200px 0px",
+          padding: "300px 0px 200px 0px",
         }}
       >
         <Contact />

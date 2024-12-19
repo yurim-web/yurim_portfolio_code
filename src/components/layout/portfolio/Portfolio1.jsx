@@ -2,6 +2,8 @@ import ImgBox from "../../common/box/ImgBox";
 import PortfolioBox from "../../common/box/PortfolioBox";
 import Stack from "../../common/button/Stack";
 
+// 강남언니 클론코딩 포트폴리오
+
 const Portfolio1 = () => {
   return (
     <section
@@ -35,8 +37,7 @@ const Portfolio1 = () => {
             gap: "90px",
           }}
         >
-         
-          <ImgBox img={"강남언니.png"}/>
+          <ImgBox img={"강남언니.png"} />
           <div
             style={{
               width: "100%",
@@ -61,8 +62,11 @@ const Portfolio1 = () => {
                 backgroundColor: "white",
               }}
             ></div>
-            
-            <PortfolioBox title={"제작기간"} value={"2024.10.25 ~ 2024.10.28"} />
+
+            <PortfolioBox
+              title={"제작기간"}
+              value={"2024.10.25 ~ 2024.10.28"}
+            />
             <PortfolioBox title={"참여도"} value={"개인 100%"} />
             <PortfolioBox
               title={"내용"}

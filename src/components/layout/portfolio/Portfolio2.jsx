@@ -2,6 +2,8 @@ import ImgBox from "../../common/box/ImgBox";
 import PortfolioBox from "../../common/box/PortfolioBox";
 import Stack from "../../common/button/Stack";
 
+// APPLE 클론 코딩 포트폴리오
+
 const Portfolio2 = () => {
   return (
     <section
@@ -37,8 +39,7 @@ const Portfolio2 = () => {
             gap: "90px",
           }}
         >
-      
-           <ImgBox img={"애플.png"}/>
+          <ImgBox img={"애플.png"} />
           <div
             style={{
               width: "100%",
@@ -63,7 +64,10 @@ const Portfolio2 = () => {
                 backgroundColor: "black",
               }}
             ></div>
-            <PortfolioBox title={"제작기간"} value={"2024.10.29 ~ 2024.11.02"} />
+            <PortfolioBox
+              title={"제작기간"}
+              value={"2024.10.29 ~ 2024.11.02"}
+            />
             <PortfolioBox title={"참여도"} value={"개인 100%"} />
             <PortfolioBox
               title={"내용"}
@@ -95,22 +99,27 @@ const Portfolio2 = () => {
                 <Stack stack={"React"} bgcolor={"#FFF0C0"} />
               </div>
             </div>
-            <a  style={{ cursor: "hand" }} href="https://yurim-web.github.io/apple_clone_page2/">     <button
-              style={{
-                width: "100%",
-                padding: "20px",
-                borderRadius: "10px",
-                border: "none",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                marginTop: "20px",
-                fontSize: "20PX",
-                backgroundColor: "black",
-                color: "white",
-              }}
+            <a
+              style={{ cursor: "hand" }}
+              href="https://yurim-web.github.io/apple_clone_page2/"
             >
-              LINK
-            </button></a>
-       
+              {" "}
+              <button
+                style={{
+                  width: "100%",
+                  padding: "20px",
+                  borderRadius: "10px",
+                  border: "none",
+                  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                  marginTop: "20px",
+                  fontSize: "20PX",
+                  backgroundColor: "black",
+                  color: "white",
+                }}
+              >
+                LINK
+              </button>
+            </a>
           </div>
         </div>
       </article>
